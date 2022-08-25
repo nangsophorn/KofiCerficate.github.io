@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="icon" href="Icon/Icon.png">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment-with-locales.min.js" integrity="sha512-EATaemfsDRVs6gs1pHbvhc6+rKFGv8+w4Wnxk4LmkC0fzdVoyWb+Xtexfrszd1YuUMBEhucNuorkf8LpFBhj6w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Kofi Certificate</title>
+</head>
+
+<body>
+    <center>
+        <div class="logo">
+
+            <a href="#"> <img src="/Icon/Kofi Academy Logo.png" alt=""></a>
+            <h1>វិទ្យាស្ថាន ខូហ្វី</h1>
+        </div>
+        <ul>
+            <li><a class="active" href="Index.html">Eseential</a></li>
+            <li><a href="Latteart.html">Latte Art</a></li>
+            <li><a href="Ctffoundation.html">CTF Foundation</a></li>
+            <li><a href="Ctfintermediate.html">CTF Intermediate</a></li>
+            <li><a href="Motfoundation.html">MOT Foundation</a></li>
+            <li><a href="Motintermediate.html">MOT Intermediate</a></li>
+        </ul>
+
+    </center>
+    <div class="row py-4">
+        <div class="col-ld-10 mx-auto">
+
+            <form>
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="fname">
+                <label for="lname"><b> ឈ្មោះពេញ </b></label>
+                <input type="text" id="lname" name="lname">
+                <label for="date"><b> កាលបរិច្ឆេទ</b></label>
+                <input type="date" id="date" name="date">
+                <input type="reset" value="Clear">
+            </form>
+
+        </div>
+    </div>
+
+
+
+    <!-- <div class="row py-4">
+            <div class="col-lg-6 mx-auto">
+                Upload image input-->
+    <!-- <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+                    <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0">
+                    <label id="upload-label" for="upload" class="font-weight-light text-muted">Choose file</label>
+                    <div class="input-group-append">
+                        <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Choose file</small></label>
+                    </div>
+                </div> -->
+
+    <!-- Uploaded image area-->
+    <!-- <p class="font-italic text-white text-center">The image uploaded will be rendered inside the box below.</p> -->
+    <!-- <div class="image-area mt-4"><img id="imageResult" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div> -->
+
+    </div>
+    </div>
+    <div class="row py-4">
+        <div class="col-ld-10 mx-auto">
+            <div class="main" id="main">
+                <div class="Essentail" id="essentail" style="margin-left: 4px; position: relative; width: 900px;  height: 637px;  background-image: url('icon/LatteArt.jpg');  background-repeat: no-repeat; background-size: cover;">
+                    <div class="fnamePlace over-text" style=" color: #b89647; top: 270px;left: 360px; font-size: 20px;font-family: Geometria; position: absolute; z-index: 1000; text-transform: uppercase;">English Name</div>
+                    <div class="khNamePlace over-text" style="color: #b89647; top: 240px; left: 395px;  font-size: 20px;  font-family: Khmer MEF2; position: absolute; z-index: 1000;">ឈ្មោះខ្មែរ</div>
+                    <!-- <div class="datePlace over-text" style=" top: 285px;  left: 190px;  font-size: 13px; font-family: Khmer MEF2;position: absolute;   z-index: 1000;">១២ មិថុនា ២០២២</div> -->
+                    <div class="datePlaceEn over-text" style=" color: #b89647;top: 412px;  font-size: 13px; left:515px;   font-family: 'Geometria'; position: absolute; z-index: 1000;">12 October 2022</div>
+                    <!-- <div class="qrcode over-text" style="position: absolute;   z-index: 1000; width: 80px;height: 80px; bottom: 80px;  left: 90px;    background-image: url('/Icon/qr.png'); background-repeat: no-repeat;   background-size: cover;"></div> -->
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row py-4">
+            <div class="col-ld-10 mx-auto">
+
+                <div class="button-print">
+                    <button type="button" class="btn-print" onclick="printDiv('main')">Print</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <script>
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function(e) {
+                        $('#imageResult').attr('src', e.target.result);
+                        // $('.qrcode ').attr('src', e.target.result);
+                        $('.qrcode ').css('backgroundImage', `url('${ e.target.result}')`);
+                    };
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+
+            $(function() {
+                $('#upload').on('change', function() {
+                    readURL(input);
+                });
+            });
+
+            $('#fname').on('input', function() {
+                $('.fnamePlace').html($(this).val())
+            })
+            $('#lname').on('input', function() {
+                $('.khNamePlace').html($(this).val())
+            })
+            $('#date').on('change', function() {
+                    $('.datePlace').html(moment($(this).val()).locale('km').format('DD MMMM YYYY'))
+                    $('.datePlaceEn').html(moment($(this).val()).format('DD MMMM YYYY'))
+                })
+                /*  ==========================================
+                    SHOW UPLOADED IMAGE NAME
+                * ========================================== */
+                // var input = document.getElementById('upload');
+                // var infoArea = document.getElementById('upload-label');
+
+            // input.addEventListener('change', showFileName);
+
+            // function showFileName(event) {
+            //     var input = event.srcElement;
+            //     var fileName = input.files[0].name;
+
+
+
+            //     infoArea.textContent = 'File name: ' + fileName;
+            // }
+
+            function printDiv(elem) {
+                var mywindow = window.open();
+                var content = document.getElementById(elem).innerHTML;
+                var realContent = document.body.innerHTML;
+                mywindow.document.write(content);
+                mywindow.document.close(); // necessary for IE >= 10
+                mywindow.focus(); // necessary for IE >= 10*/
+                mywindow.print();
+                document.body.innerHTML = realContent;
+                mywindow.close();
+                return true;
+            }
+        </script>
+
+
+</body>
+
+</html>

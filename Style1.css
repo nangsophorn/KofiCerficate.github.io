@@ -1,0 +1,211 @@
+body {
+    min-height: 100vh;
+    background-color: #757f9a;
+    background-image: linear-gradient(147deg, #2b2b2b 0%, #2b2b2b 100%);
+}
+.logo img {
+    width: 150px;
+    height: 150px;
+}
+
+.logo h1 {
+    font-family: Khmer MEF2;
+    color: #9b7d39;
+}
+
+
+/* 
+សម្រាប់លេងស្ទាយ
+this the menu */
+
+ul {
+    border-radius: 5px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 60%;
+    background-color: rgb(0, 0, 0);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+li {
+    font-family: 'Geometria', Khmer MEF2;
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-image: linear-gradient(to right, #9b7d39, #b89647);
+}
+
+.active {
+    background-color: #b89647;
+}
+
+
+
+
+
+#upload {
+    opacity: 0;
+}
+
+#upload-label {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+}
+
+.image-area::before {
+    content: 'Uploaded image result';
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8rem;
+    z-index: 1;
+}
+
+.image-area img {
+    z-index: 2;
+    position: relative;
+}
+
+img {
+    width: 200px;
+}
+
+h1 {
+    font-family: 'Kantumruy Pro';
+    color: #b89647;
+    padding: 10px;
+}
+
+h3 {
+    font-family: 'Kantumruy Pro';
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.Essentail {
+    position: relative;
+    width: 4455px;
+    height: 3150px;
+    /* background-image: url('icon/Certificates/MOT Intermediate.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-certificate img {
+    position: relative;
+    width: 4455px;
+    height: 3150px;
+    /* background-image: url('icon/Certificates/MOT Intermediate.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.over-text {
+    position: absolute;
+    z-index: 1000;
+}
+
+.fnamePlace {
+    top: 264px;
+    left: 570px;
+    font-size: 13px;
+    font-family: Geometria;
+}
+
+.khNamePlace {
+    top: 265px;
+    left: 190px;
+    font-size: 13px;
+    font-family: Khmer MEF2;
+}
+
+.datePlace {
+    top: 285px;
+    left: 190px;
+    font-size: 13px;
+    font-family: Khmer MEF2;
+}
+
+.datePlaceEn {
+    top: 286px;
+    font-size: 13px;
+    left: 570px;
+    font-family: 'Geometria'
+}
+
+.qrcode {
+    width: 80px;
+    height: 80px;
+    bottom: 80px;
+    left: 90px;
+    background-image: url('/Icon/qr.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    color: rgb(255, 255, 255);
+    font-family: 'Kantumruy Pro';
+    padding: 20px;
+}
+
+input[type=text] {
+    border: none;
+    font-family: 'Geometria' , Khmer MEF2 ;
+    width: 200px;
+    color: black;
+    border-radius: 10px;
+    height: 35px;
+}
+
+input[type=date] {
+    border: none;
+    font-family: 'Geometria' ;
+    width: 200px;
+    color: black;
+    border-radius: 10px;
+    height: 35px;
+}
+
+input[type=reset] {
+ margin-left: 20px;
+    border: none;
+    background-color: #b89647;
+    width: 80px;
+    font-family: 'Geometria', Kantumruy;
+    color: #ffffff;
+    border-radius: 5px;
+    height: 35px;
+}
+
+
+.button-print button {
+    margin: 30px 20px;
+    font-family: 'Geometria', Kantumruy;
+    color: white;
+    border: none;
+    font-size: 20px;
+    background-color: #b89647;
+    border-radius: 5px;
+
+    width: 100px;
+    height: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

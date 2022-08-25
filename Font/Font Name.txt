@@ -1,0 +1,14 @@
+English Font:	Geometria
+Khmer Font:	Khmer MEF2
+
+Code Color:	205, 160, 83
+code Color:	#c3a531
+
+Eseential
+Latte Art
+CTF Foundation
+CTF Intermediate
+MOT Foundation
+MOT Intermediate
+
+Date: 01/01/2022
